@@ -1,0 +1,15 @@
+# YAML 1.2
+---
+abstract: "This repository is meant to be a ready reference for scientific computation methods."
+authors: 
+  -
+    affiliation: "Department of ETCE, Jadavpur University"
+    family-names: Dutta
+    given-names: Sandip
+cff-version: "1.2.0"
+date-released: 2021-09-26
+license: MIT
+message: "If you use this software, please cite it using these metadata."
+repository-code: "https://github.com/Dutta-SD/sci-cpy"
+title: "sci-cpy"
+...
