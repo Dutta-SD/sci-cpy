@@ -1,4 +1,4 @@
-from sympy import sympify, diff, Add, Mul
+from sympy import sympify, diff
 
 class New_Raph_Error(Exception):
     pass
@@ -18,7 +18,7 @@ def NewRaphAlgorithm(equation, nearpoint, decimal= 3):
         equation = str(equation)
         equation = sympify(equation)
     except:
-        raise New_Raph_Error("Please use '*' between any number and variable.")
+        raise New_Raph_Error("Please use '*' between any number and variable or brackets.")
     
     try:
         diff_equation = diff(equation)
@@ -71,5 +71,4 @@ E.g.- '2kite' is considered same as '2x'.\n''')
     equation = input('Enter a one variable polynomial: ')
     nearpoint = input('Enter value of a number close to a root: ')
     decimal = input('Enter the no. of decimal places for the appoximation of the root: ')
-    print(NewRaphAlgorithm(equation, nearpoint, decimal))
-    
+    print(NewRaphAlgorithm(equation, nearpoint, decimal))  
