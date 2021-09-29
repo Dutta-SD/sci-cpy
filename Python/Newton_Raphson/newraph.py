@@ -7,12 +7,12 @@ It is advised to follow all rules of the algorithm while entering the input.
 (Either read rules provided in README.md or search online)
 Program will cause an error in case any of the algorithm rules are not obeyed.
 
-Simply import NewRaphAlgorithm function in any program to use this algorithm to find equation roots.
+Simply import NewRaphAlgorithm function in any program to use this algorithm to find roots of a math function.
 
-This program has a dependency on SymPy library. Sympy is basically used here to convert equation in string form
-into a solvable equation and to differentiate that equation.
+This program has a dependency on SymPy library. Sympy is basically used here to convert math function in string form
+into a solvable function and to differentiate that function.
 
-NewRaphAlgorithm function accepts only a string as the equation, a float as root nearpoint 
+NewRaphAlgorithm function accepts only a string as the math function, a float as root nearpoint 
 and an integer as no. of decimal places of approximation (Any float provided will be converted to a whole number).
 
 Some non-algorithmic rules particular to ths module are:
@@ -35,7 +35,7 @@ class New_Raph_Error(Exception):
     pass
 
 # Defining a function for Newton Raphson Algorithm (NRA).
-# This accepts a string as the equation, a float as root nearpoint, an integer as no. of decimal places of approximation.
+# This accepts a string as the math function, a float as root nearpoint, an integer as no. of decimal places of approximation.
 def NewRaphAlgorithm(equation, nearpoint, decimal= 3):
     
     try:    #Checking invaild input
@@ -74,9 +74,9 @@ def NewRaphAlgorithm(equation, nearpoint, decimal= 3):
     
     # Looping through actual Algorithm
     x=0
-    while x<50 and prev_np != nearpoint and nearpoint != float('nan'):
-        eq = float(equation.subs(var, nearpoint))            #Solving given equation by substituting nearpoint
-        diff_eq = float(diff_equation.subs(var, nearpoint))  #Solving differentiated equation similarly
+    while x<1000 and prev_np != nearpoint and nearpoint != float('nan'):
+        eq = float(equation.subs(var, nearpoint))            #Solving given function by substituting nearpoint
+        diff_eq = float(diff_equation.subs(var, nearpoint))  #Solving differentiated function similarly
         prev_np = nearpoint
         try:
             nearpoint = nearpoint - (eq/diff_eq)    #Formula for NRA
@@ -89,11 +89,10 @@ def NewRaphAlgorithm(equation, nearpoint, decimal= 3):
     
 # Post Algorithm result validity checking
     if nearpoint == float('nan'):
-        raise New_Raph_Error('''There is a local minima or maxima or a point of inflection between 
+        raise New_Raph_Error('''There is a local minima or maxima or a point of inflection around 
 root assumption provided and nearest root value''')
-    elif x==50:
-        raise New_Raph_Error('''Entered polynomial doesn't have any real root or
-There is a local minima or maxima or a point of inflection around root assumption provided or the nearest root value''')
+    elif x==1000:
+        raise New_Raph_Error('''Entered polynomial doesn't have any real root''')
     else:
         return nearpoint
     
@@ -121,4 +120,4 @@ E.g.- '2*kite' is considered same as '2*x'.\n''')
     equation = input('Enter a one variable polynomial: ')
     nearpoint = input('Enter value of a number close to a root: ')
     decimal = input('Enter the no. of decimal places for the appoximation of the root: ')
-    print(f'\nOne of the roots of given equation is: {NewRaphAlgorithm(equation, nearpoint, decimal)}')  
+    print(f'\nOne of the roots of given function is: {NewRaphAlgorithm(equation, nearpoint, decimal)}')  
