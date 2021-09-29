@@ -1,4 +1,5 @@
 Requirements:
 ---SymPy Library
 
-The only dependency this program has a dependency on SymPy library. Sympy is basically used here to convert equation in string form into a solvable equation and to differentiate that equation.
+The only dependency this program has is on SymPy library. 
+Sympy is basically used here to convert math function in string form into a solvable function and to differentiate that function.

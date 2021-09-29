@@ -24,7 +24,7 @@ into a solvable function and to differentiate that function.
 ## Python *'NewRaphAlgorithm'* function rules:
 
 1- There should always be a '\*' sign between any number and variable or brackets.
-       For Example: 'x^2-4x-7' is not allowed. Write it as 'x^2-4\*x-7'
+       For Example: 'x^2-4x-7' is not allowed. Write it as 'x^2-4\*x-7'.
                     Also, '4(x+2)' is not allowed. Write it as '4\*(x+2)'
 
 2- Multiple alphabets together are considered as one variable.
@@ -47,3 +47,6 @@ As demonstrated in ***tests.py*** file.
 
 ITS NOT THAT I AM 100% SURE THAT THIS PROGRAM IS COMPLETELY BUG FREE, BUT I HAVE FIXED A PRETTY GOOD CHUNK OF THEM. BUT IF STILL A BUG IS FOUND THAT MEANS 
 I DIDN'T ENCOUNTER THAT BUG IN MY TESTING. I TESTED THIS PROGRAM WITH OVER A 100 POLYNOMIALS.
+
+
+***Created by Chaitanya Lakhchaura (aka ZenithFlux on github- https://github.com/ZenithFlux/)***  

@@ -18,14 +18,14 @@ and an integer as no. of decimal places of approximation (Any float provided wil
 Some non-algorithmic rules particular to ths module are:
          
     1- There should always be a '*' sign between any number and variable or brackets.
-       For Example: 'x^2-4x-7' is not allowed. Write it as 'x^2-4*x-7'
+       For Example: 'x^2-4x-7' is not allowed. Write it as 'x^2-4*x-7'.
                     Also, '4(x+2)' is not allowed. Write it as '4*(x+2)'
 
     2- Multiple alphabets together are considered as one variable.
        For Example: '2*kite' is considered same as '2*x'.
        
-NOTE- I AM NOT 100% SURE THAT THIS PROGRAM IS COMPLETELY BUG FREE. BUT IF STILL A BUG IS FOUND THAT MEANS 
-I DIDN'T ENCOUNTER THAT BUG IN MY TESTING. I TESTED THIS PROGRAM WITH OVER A 100 POLYNOMIALS.'''
+NOTE- ITS NOT THAT I AM 100% SURE THAT THIS PROGRAM IS COMPLETELY BUG FREE, BUT I HAVE FIXED A PRETTY GOOD CHUNK OF THEM. 
+BUT IF STILL A BUG IS FOUND THAT MEANS I DIDN'T ENCOUNTER THAT BUG IN MY TESTING. I TESTED THIS PROGRAM WITH OVER A 100 POLYNOMIALS.'''
 
 # Importing SymPy library functions
 from sympy import sympify, diff
@@ -120,4 +120,6 @@ E.g.- '2*kite' is considered same as '2*x'.\n''')
     equation = input('Enter a one variable polynomial: ')
     nearpoint = input('Enter value of a number close to a root: ')
     decimal = input('Enter the no. of decimal places for the appoximation of the root: ')
-    print(f'\nOne of the roots of given function is: {NewRaphAlgorithm(equation, nearpoint, decimal)}')  
+    print(f'\nOne of the roots of given function is: {NewRaphAlgorithm(equation, nearpoint, decimal)}')
+    
+# Created by Chaitanya Lakhchaura (aka ZenithFlux on github- https://github.com/ZenithFlux/)  
