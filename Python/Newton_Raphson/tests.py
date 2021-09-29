@@ -1,0 +1,1 @@
+from newraph import NewRaphAlgorithm as root

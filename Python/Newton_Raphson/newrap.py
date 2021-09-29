@@ -1,3 +1,6 @@
+# This file is also a independently runnable file in addition to being a module.
+# You can run this file to test NewRaphAlgorithm function.
+
 '''
 This program demonstrates Newton Raphson Algorithm(NPA).
 It is advised to follow all rules of the algorithm while entering the input.
@@ -94,6 +97,7 @@ There is a local minima or maxima or a point of inflection around root assumptio
     else:
         return nearpoint
     
+    
 #-------------------------------------------------NRA Module Ends Here--------------------------------------------------------
     
 
@@ -117,4 +121,4 @@ E.g.- '2*kite' is considered same as '2*x'.\n''')
     equation = input('Enter a one variable polynomial: ')
     nearpoint = input('Enter value of a number close to a root: ')
     decimal = input('Enter the no. of decimal places for the appoximation of the root: ')
-    print('One of the roots of given equation is: ' + NewRaphAlgorithm(equation, nearpoint, decimal))  
+    print(f'\nOne of the roots of given equation is: {NewRaphAlgorithm(equation, nearpoint, decimal)}')  
