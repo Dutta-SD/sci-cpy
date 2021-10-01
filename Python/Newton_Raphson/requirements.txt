@@ -1,5 +1,5 @@
 Requirements:
----SymPy Library
+---SymPy == 1.8
 
 The only dependency this program has is on SymPy library. 
 Sympy is basically used here to convert math function in string form into a solvable function and to differentiate that function.
