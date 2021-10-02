@@ -9,7 +9,7 @@ Program will cause an error in case any of the algorithm rules are not obeyed.
 
 Simply import NewRaphAlgorithm function in any program to use this algorithm to find roots of a math function.
 
-This program has a dependency on SymPy library. Sympy is basically used here to convert math function in string form
+This program has a dependency on SymPy library. We used Sympy library here to convert math function in string form
 into a solvable function and to differentiate that function.
 
 NewRaphAlgorithm function accepts only a string as the math function, a float as root nearpoint 
