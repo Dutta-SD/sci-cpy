@@ -1,3 +1,3 @@
 ## LANGRANGE'S INTERPOLATION FORMULA
 
-If $ y=f(x) $
+o this text would have an equation here $ E = mc^2$
