@@ -1,6 +1,6 @@
 # Newton Raphson Algorithm
 
-This program demonstrates Newton Raphson Algorithm(NPA).
+This program demonstrates Newton Raphson Algorithm(NRA).
 It is advised to follow all rules of the algorithm while entering the input.
 Program will cause an error in case any of the algorithm rules are not obeyed.
 
