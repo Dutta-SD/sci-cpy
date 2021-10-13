@@ -54,6 +54,6 @@ int main()
     printf("\n\nPlease enter a guess for the solution : ");
 	scanf("%f",&x0);
 
-	printf("%f",NewtonRaphson(x0));
+	printf("A root of the equation is : %f",NewtonRaphson(x0));
 	return 0;
 }
