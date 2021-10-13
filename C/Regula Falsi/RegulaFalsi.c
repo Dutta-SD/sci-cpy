@@ -57,6 +57,6 @@ int main()
     printf("\n\nEnter the left and right boundaries in order of the closed interval as mentioned above:");
 	scanf("%f%f",&x1,&x2);
 
-	printf("%f",RegulaFalsi(x1,x2));
+	printf("A root of the equation is : %f",RegulaFalsi(x1,x2));
 	return 0;
 }
