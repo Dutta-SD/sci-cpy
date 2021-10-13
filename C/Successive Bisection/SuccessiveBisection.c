@@ -54,12 +54,12 @@ int main()
 
     printf("\n\t***SOLUTION OF EQUATIONS BY SUCCESSIVE BISECTION METHOD***");
 
-    printf("\n\nINSTRUCTIONS:\nEquation to be solved is denoted by f(x)=0\nThe equation to be solved can be modified by changing the following function in the source code : f(x) \n\nInput : the left and right boundaries of a closed interval such that the values of f(x) at the boundary points are opposite in sign\nOutput : A solution for the equation if possible. If a solution can not be calculated, the program exits.");
+    printf("\n\nINSTRUCTIONS:\nEquation to be solved is denoted by f(x)=0\nThe equation to be solved can be modified by changing the following function in the source code : f(x) \n\nInput : The left and right boundaries of a closed interval such that the values of f(x) at the boundary points are opposite in sign\nOutput : A solution for the equation if possible. If a solution can not be calculated, the program exits.");
 
     
     printf("\n\nEnter the left and right boundaries in order of the closed interval as mentioned above:");
 	scanf("%f%f",&x1,&x2);
 
-	printf("%f",SuccessiveBisection(x1,x2));
+	printf("A root of the equation is : %f",SuccessiveBisection(x1,x2));
 	return 0;
 }
