@@ -17,6 +17,7 @@ void main(){
   printf("\nEnter the final limit: ");
   scanf("%lf",&b);
   y=fabs(b-a)/s;
+  /* This 'for' loop is used to divide the graph in the number of slabs as specified by the user */
   for(int i=1;i<s;i++){
     x=a+i*y;
     if(i%2==0){
