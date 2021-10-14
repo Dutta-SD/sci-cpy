@@ -1,4 +1,4 @@
-# Sci - cpy
+![Sci-Cpy Logo](assets/logo/sci-cpy.svg)
 > README is a stub. Do expand it
 
 ## Objective
