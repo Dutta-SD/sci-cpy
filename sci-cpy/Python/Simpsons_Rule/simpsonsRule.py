@@ -4,7 +4,7 @@ from sympy import *
 def simpsonsRule(str_expr, a, b):
     """Simpson's 1/3 Rule of approximation for defininite integrals
     Takes three parameters: string expression, a - lower bound, b - upper bound
-    Returns: approximation for definite integral of inputted expression"""
+    Returns: approximation for the definite integral of inputted expression"""
     x = symbols("x")
     fcn = sympify(str_expr)
     delta_x = (b - a) / 6
