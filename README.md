@@ -1,6 +1,5 @@
 ![Sci-Cpy Logo](assets/logo/sci-cpy.svg)
 
-## Objective
 This repository is meant to be a ready reference for scientific computation methods.
 
 Do ⭐ it if you find it useful!
