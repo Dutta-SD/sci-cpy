@@ -1,5 +1,4 @@
 ![Sci-Cpy Logo](assets/logo/sci-cpy.svg)
-> README is a stub. Do expand it
 
 ## Objective
 This repository is meant to be a ready reference for scientific computation methods.
