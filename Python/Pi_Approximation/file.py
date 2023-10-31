@@ -8,7 +8,7 @@ for i in range(1000000):
 
 	# even index elements are positive
 	if i % 2 == 0:
-		s + = 4/k
+		s += 4/k
 	else:
 
 		# odd index elements are negative
